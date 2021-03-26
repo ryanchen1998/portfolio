@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/bootstrap";
+
+// $font-stack:    Helvetica, sans-serif;
+$primary-color: #b18fcf;
+$secondary-color: #d8d8f6;
+$third-color: #494850;
+$fourth-color: #978897;
+$background-color: #2c2c34;
+
+body {
+    // font: 100% $font-stack;
+    color: $primary-color;
+    background-color: $background-color
+}
+
+h3 {
+    color: $secondary-color;
+}
+
+h2 {
+    color: $primary-color;
+}
+
+p {
+    color:$secondary-color;
+}
+
+.section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    border-bottom: 1px solid $third-color;
+    margin-bottom: 2rem;
+}
+
+.section-body {
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+@import './base';
+
+.card {
+    border: none;
+    background-color: $third-color;
+    // max-width: 25rem;
+    min-width: 18rem;
+}
+
+
+
+@media (max-width: 1400px)  {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 950px)  {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-footer {
+    color: $fourth-color;
+    align-items: center;
+    display: flex;
+
+    Button {
+        margin-left: auto;
+    }
+
+    .badge {
+        margin: 0.5rem;
+        background-color: $primary-color;
+        color: $third-color;
+    }
+
+}

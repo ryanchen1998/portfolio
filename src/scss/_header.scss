@@ -1,0 +1,17 @@
+@use 'base';
+
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: $primary-color;
+}
+
+.nav-link:hover {
+    color: $secondary-color;
+}
