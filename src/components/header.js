@@ -4,6 +4,8 @@ import {
     Container
 } from 'react-bootstrap'
 
+import { motion } from "framer-motion"
+
 function Header() {
     return (
         <Container>

@@ -10,7 +10,7 @@ $background-color: #2c2c34;
 body {
     // font: 100% $font-stack;
     color: $primary-color;
-    background-color: $background-color
+    background-color: $background-color;
 }
 
 h3 {
@@ -32,6 +32,8 @@ p {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5rem;
+    padding-top: 56px;
+    margin-top: -56px;
 }
 
 .section-title {
@@ -41,9 +43,4 @@ p {
 
 .section-body {
     text-align: center;
-}
-
-.toast {
-    position: fixed;
-    bottom: 0;
 }
