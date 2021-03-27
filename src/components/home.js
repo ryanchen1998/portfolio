@@ -1,8 +1,16 @@
+import React, {
+    useState,
+    useEffect
+} from 'react';
+
 import {
     Container,
     Row,
     Col,
     Button,
+    Toast,
+    OverlayTrigger,
+    Tooltip,
 } from 'react-bootstrap'
 
 import { 
@@ -12,6 +20,21 @@ import {
 } from 'react-icons/ai';
 
 function Home() {
+    const [showTooltip, setShowTooltip] = useState(false);
+
+    function copyToClipboard() {
+        navigator.clipboard.writeText('RyanChen98@oulook.com');
+        setShowTooltip(true);
+    };
+
+    useEffect(() => {
+        const timerId = setInterval(() => {
+        setShowTooltip(false);
+        }, 3000);
+
+        return () => clearInterval(timerId);
+    },[showTooltip]);
+
     return (
         <Container id="home" className="home-section section">
             <Row>
@@ -22,19 +45,28 @@ function Home() {
                 </Col>
             </Row>
             <Row>
-                <Button
-                    variant="icon"
-                    size="sm"
-                    href=""
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                <OverlayTrigger
+                    show={showTooltip}
+                    placement='top'
+                    delay={1}
+                    overlay={
+                        <Tooltip>
+                            Email copied to clipboard!
+                        </Tooltip>
+                    }
                 >
-                    <AiOutlineMail size="24" color="#b18fcf"/>
-                </Button>   
+                    <Button
+                        variant="icon"
+                        size="sm"
+                        onClick={(e) => copyToClipboard()}
+                    >
+                        <AiOutlineMail size="24" color="#b18fcf"/>
+                    </Button> 
+                </OverlayTrigger>  
                 <Button
                     variant="icon"
                     size="sm"
-                    href=""
+                    href="https://github.com/ryanchen1998"
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
@@ -43,7 +75,7 @@ function Home() {
                 <Button
                     variant="icon"
                     size="sm"
-                    href=""
+                    href="https://www.linkedin.com/in/ryan-chen-52378b199/"
                     target="_blank" 
                     rel="noopener noreferrer"
                 >

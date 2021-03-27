@@ -43,10 +43,9 @@ function Projects() {
                                 <Button
                                     variant="icon"
                                     size="sm"
-                                    href=""
+                                    href="https://github.com/ryanchen1998/TravelEA"
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="float-right"
                                 >
                                     <AiFillGithub size="24" color="#b18fcf"/>
                                 </Button>
@@ -70,7 +69,7 @@ function Projects() {
                                 <Button
                                     variant="icon"
                                     size="sm"
-                                    href=""
+                                    href="https://github.com/ryanchen1998/covidaily"
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="float-right"
@@ -132,7 +131,7 @@ function Projects() {
                                 <Button
                                     variant="icon"
                                     size="sm"
-                                    href=""
+                                    href="https://github.com/ryanchen1998/battleships"
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="float-right"
