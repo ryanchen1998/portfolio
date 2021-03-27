@@ -25,7 +25,7 @@ function Home() {
     const [showTooltip, setShowTooltip] = useState(false);
 
     function copyToClipboard() {
-        navigator.clipboard.writeText('RyanChen98@oulook.com');
+        navigator.clipboard.writeText('RyanChen98@outlook.com');
         setShowTooltip(true);
     };
 
