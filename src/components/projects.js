@@ -104,7 +104,7 @@ function Projects() {
                             </Card>
 
                             <Card>
-                                <Card.Img variant="top" src="/images/internship.jpg"/>
+                                <Card.Img variant="top" src="/images/internship.JPG"/>
                                 <Card.Body>
                                     <Card.Title>Konfig-UI</Card.Title>
                                     <Card.Text>
